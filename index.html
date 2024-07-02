@@ -1,23 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cek Khodam Online</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Cek Khodam Online</h1>
-      <p>Masukkan nama anda untuk melihat apakah anda memiliki khodam.</p>
-      <input type="text" id="nameInput" placeholder="Masukkan nama Anda" />
-      <button onclick="checkkhodam()">Cek Khodam</button>
-      <div id="result"></div>
-      <footer>&copy;2024</footer>
-    </div>
-  </body>
-  <script src="script.js"></script>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cek Khodam ☠️</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="card">
+            <h1>Cek Khodam</h1>
+            <p>Masukkan nama kamu</p>
+            <input type="text" id="nameInput" placeholder="Ketik nama kamu disini">
+            <button onclick="cekKhodam()">Cek Khodam Coy</button>
+            <div id="loading" class="loading-spinner" style="display: none;"></div>
+            <button onclick="resetForm()" style="margin-top: 20px;">Cek Lagi</button>
+            <div id="result">
+                <h2 id="khodamName"></h2>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Manzzzx.</p>
+        </div>
